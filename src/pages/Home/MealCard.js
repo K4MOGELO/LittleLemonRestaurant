@@ -1,8 +1,7 @@
-import { faMotorcycle } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Link } from 'react-router-dom';
-import './MealCard.css';
-import pages from '../../../utils/pages';
+import { faMotorcycle } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "react-router-dom";
+import "./MealCard.css";
 
 const MealCard = ({ meal }) => {
   return (
@@ -16,7 +15,7 @@ const MealCard = ({ meal }) => {
       </div>
       <div className="meal-card-body-footer">
         <p>{meal.description}</p>
-        <Link to={pages.get('orderOnline').path}>
+        <Link to="/orderOnline">
           Order a delivery <FontAwesomeIcon icon={faMotorcycle} />
         </Link>
       </div>

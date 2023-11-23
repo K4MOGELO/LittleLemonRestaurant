@@ -4,15 +4,14 @@ import {
   Routes,
 } from 'react-router-dom';
 import Layout from './components/layout/Layout';
-import Home from './components/pages/Home';
-import Bookings from './components/pages/Bookings';
-import ConfirmedBooking from './components/pages/Bookings/ConfirmedBooking';
-import NotFound from './components/pages/NotFound';
-import UnderConstruction from './components/pages/UnderConstruction';
-import About from './components/pages/About';
-import MENU from './components/pages/Menu';
-import ORDER from './components/pages/order-online';
-import Login from './components/pages/Login';
+import Home from "./pages/Home";
+import Bookings from "./pages/Bookings";
+import ConfirmedBooking from "./pages/Bookings/ConfirmedBooking";
+import NotFound from "./pages/NotFound";
+import About from "./pages/About";
+import MENU from "./pages/Menu";
+import ORDER from "./pages/order-online";
+import Login from "./pages/Login";
 
 const App = () => {
   return (
