@@ -25,12 +25,12 @@ Little Lemon Restaurant is a React-based web application designed to provide use
 
 To get started with the Little Lemon Restaurant app, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/your-username/little-lemon-restaurant.git`
+1. Clone the repository: `git clone https://github.com/K4MOGELO/LittleLemonRestaurant`
 2. Install dependencies: `cd little-lemon-restaurant && npm install`
 3. Run the app: `npm start`
 
 ## Usage
 
-1. Visit the [Little Lemon Restaurant](https://example.com) website.
+1. Visit <LAZY TO HOST>.com
 2. Explore the various sections such as home, reservations, about, and testimonials.
 3. Make a table reservation by selecting a date a
