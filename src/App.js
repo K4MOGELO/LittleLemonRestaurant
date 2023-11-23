@@ -1,49 +1,36 @@
-// App.js
+import React from 'react';
+import {
+  Route,
+  Routes,
+} from 'react-router-dom';
+import Layout from './components/layout/Layout';
+import Home from './components/pages/Home';
+import Bookings from './components/pages/Bookings';
+import ConfirmedBooking from './components/pages/Bookings/ConfirmedBooking';
+import NotFound from './components/pages/NotFound';
+import UnderConstruction from './components/pages/UnderConstruction';
+import About from './components/pages/About';
+import MENU from './components/pages/Menu';
+import ORDER from './components/pages/order-online';
+import Login from './components/pages/Login';
 
-import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Nav from "./Components/semantics/Nav";
-import Header from "./Components/semantics/Header";
-import Main from "./Components/semantics/Main";
-import Footer from "./Components/semantics/Footer";
-
-function App() {
+const App = () => {
   return (
-    <Router>
-      <>
-        <Nav />
-        <Header />
-        <Main />
-        <Footer />
-      </>
-    </Router>
+    <>
+      <Layout>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/menu" element={<MENU />} />
+          <Route path="/bookings" element={<Bookings />} />
+          <Route path="/confirmed-booking" element={<ConfirmedBooking />} />
+          <Route path="/order-online" element={<ORDER />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </Layout>
+    </>
   );
-}
+};
 
 export default App;
-
-// // App.js
-
-// import React from "react";
-// import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-// import Footer from "./Components/layout/Footer";
-// import Main from "./Components/layout/Main";
-// import Nav from "./Components/layout/Nav";
-// import BookingPage from "./pages/BookingPage"; // Import your BookingPage component
-
-// function App() {
-//   return (
-//     <Router>
-//       <>
-//         <Nav />
-//         <Switch>
-//           <Route path="/booking" component={BookingPage} />
-//           <Route path="/" exact component={Main} />
-//         </Switch>
-//         <Footer />
-//       </>
-//     </Router>
-//   );
-// }
-
-// export default App;
